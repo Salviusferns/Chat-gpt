@@ -2,7 +2,7 @@ import openai
 
 
 def chat_with_gpt(message):
-  response = openai.Completion.create(engine="text-davinci-003",
+  response = openai.Completion.create(engine="gpt-3.5-turbo",
                                       prompt=message,
                                       max_tokens=50,
                                       temperature=0.7)
